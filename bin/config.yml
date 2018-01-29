@@ -1,0 +1,11 @@
+#====================================================== EC_Economy config.yml =======================================================#
+# Author: TheExplorerBR
+MySQL:
+  enable: false
+  hostname: localhost
+  port: 3306
+  database: Your Database
+  username: Your DB Username
+  password: Your DB password
+  
+Currency: $  

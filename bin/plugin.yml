@@ -1,0 +1,10 @@
+main: br.com.explorecraft.ec_economy.Main
+name: EC_Economy
+version: 1.0
+author: TheExplorerBR
+depend: [Vault]
+load: STARTUP
+commands:
+  money:
+    description: Comands of plugin. Type /money help to see.
+    usage: /money |<player>|<help>|<pay> <player>|
