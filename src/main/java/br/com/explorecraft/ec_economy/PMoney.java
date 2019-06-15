@@ -5,10 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.UUID;
 
 import org.bukkit.Bukkit;
 
 import br.com.explorecraft.ec_economy.msgs.MsgStr;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
 
 public class PMoney {
 	
@@ -33,15 +36,30 @@ public class PMoney {
 			stmt.close();
 			rs.close();
 		} catch (SQLException e){
-			Bukkit.getPlayer(player).kickPlayer(MsgStr.internalerror);
+			Bukkit.getPlayer(UUID.fromString(player)).kickPlayer(MsgStr.internalerror);
 		}
 	}
 	
 	public double getMoney(){
 		return this.money;
 	}
-	public String getPlayer(){
-		return this.player;
+
+	//This is the Database key.
+	public String getPlayerUUID(){return player;}
+
+	public String getPlayerName(){
+	    Player pp = Main.plugin.getServer().getPlayer(UUID.fromString(player));
+        if ( pp!= null) {
+            return pp.getName();
+        } else {
+            OfflinePlayer offp = Main.plugin.getServer().getOfflinePlayer(UUID.fromString(player));
+            if (offp != null) {
+                return offp.getName();
+            }
+            else
+                return "UnknownPlayerName";
+        }
+
 	}
 	public void setMoney(double value){
 		this.money = value;

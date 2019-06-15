@@ -135,7 +135,7 @@ public class Main extends JavaPlugin{
 			for (String p : accounts.keySet()){
 				
 				PMoney pm = getPMoney(p);
-				String cmd= "UPDATE Money SET Money='" + pm.getMoney() + "' WHERE Player='" + pm.getPlayer() + "'";
+				String cmd= "UPDATE Money SET Money='" + pm.getMoney() + "' WHERE Player='" + pm.getPlayerName() + "'";
 				PreparedStatement stmt = c.prepareStatement(cmd);
 				if (value_modific.containsKey(pm)){
 					if (value_modific.get(pm) != pm.getMoney()){

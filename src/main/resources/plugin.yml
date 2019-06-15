@@ -1,6 +1,6 @@
 main: br.com.explorecraft.ec_economy.Main
 name: EC_Economy
-version: 1.0
+version: {project.version}
 author: TheExplorerBR
 depend: [Vault]
 load: STARTUP

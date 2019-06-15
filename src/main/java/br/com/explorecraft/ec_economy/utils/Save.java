@@ -29,7 +29,7 @@ public class Save implements Runnable{
 					for (String p : Main.plugin.accounts.keySet()){
 							
 						PMoney pm = Main.plugin.getPMoney(p);
-						String cmd = "UPDATE Money SET Money='" + pm.getMoney() + "' WHERE Player='" + pm.getPlayer() + "'";
+						String cmd = "UPDATE Money SET Money='" + pm.getMoney() + "' WHERE Player='" + pm.getPlayerUUID() + "'";
 						
 						PreparedStatement stmt = c.prepareStatement(cmd);
 						
@@ -54,7 +54,7 @@ public class Save implements Runnable{
 								mmoney = ap;
 							}
 							if (ap.getMoney() > mmoney.getMoney()){
-								magnata = ap.getPlayer();
+								magnata = ap.getPlayerUUID();
 								mmoney = ap;
 							}
 						}

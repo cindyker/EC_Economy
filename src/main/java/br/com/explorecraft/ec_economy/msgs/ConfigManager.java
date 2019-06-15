@@ -52,6 +52,7 @@ public class ConfigManager {
 
 
 	public FileConfiguration getConfigMsgs() {
+
 		return configmsg;
 	}
 

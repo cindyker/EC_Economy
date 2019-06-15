@@ -10,6 +10,7 @@ import org.bukkit.Bukkit;
 
 import br.com.explorecraft.ec_economy.Main;
 import br.com.explorecraft.ec_economy.PMoney;
+import org.bukkit.ChatColor;
 
 public class MoneyData {
 	
@@ -18,7 +19,7 @@ public class MoneyData {
 		pm.setMoney(0);
 		pm.save();
 		Main.plugin.accounts.put(nick, pm);
-		Main.plugin.debug("§e " + nick + " - Successfully created account.");
+		Main.plugin.debug(ChatColor.translateAlternateColorCodes('&',"§e " + nick + " - Successfully created account."));
 	}
 		
 	public static void loadAccounts(){

@@ -17,9 +17,10 @@ public class PlayerJoin implements Listener{
 	
 	@EventHandler(priority=EventPriority.HIGH)
 	public void onJoin(PlayerJoinEvent e){
-		if (Main.plugin.getPMoney(e.getPlayer().getName()) == null){
+		//if (Main.plugin.getPMoney(e.getPlayer().getName()) == null){
+		if (Main.plugin.getPMoney(e.getPlayer().getUniqueId().toString()) == null){
 			try {
-				MoneyData.createAccount(e.getPlayer().getName());
+				MoneyData.createAccount(e.getPlayer().getUniqueId().toString());
 			} catch (SQLException e1) {
 				e.getPlayer().kickPlayer(MsgStr.internalerror);
 				e1.printStackTrace();

@@ -17,32 +17,32 @@ public class VaultHandler implements Economy{
 
 	@Override
 	public EconomyResponse bankBalance(String arg0) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse bankDeposit(String arg0, double arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse bankHas(String arg0, double arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse bankWithdraw(String arg0, double arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse createBank(String arg0, String arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse createBank(String arg0, OfflinePlayer arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin n&o possui suporte para este tipo de acao.");
 	}
 
 	@Override
@@ -105,7 +105,7 @@ public class VaultHandler implements Economy{
 
 	@Override
 	public EconomyResponse deleteBank(String arg0) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin nï¿½o possui suporte para este tipo de acao.");
 	}
 
 	@Override
@@ -241,22 +241,22 @@ public class VaultHandler implements Economy{
 
 	@Override
 	public EconomyResponse isBankMember(String arg0, String arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin nï¿½o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse isBankMember(String arg0, OfflinePlayer arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin nï¿½o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse isBankOwner(String arg0, String arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin nï¿½o possui suporte para este tipo de acao.");
 	}
 
 	@Override
 	public EconomyResponse isBankOwner(String arg0, OfflinePlayer arg1) {
-		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin não possui suporte para este tipo de acao.");
+		return new EconomyResponse(0.0, 0.0, ResponseType.NOT_IMPLEMENTED, "Este plugin nï¿½o possui suporte para este tipo de acao.");
 	}
 
 	@Override
